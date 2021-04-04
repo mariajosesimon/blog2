@@ -14,7 +14,9 @@ class EntradaController extends Controller
      */
     public function index()
     {
-        //
+        $entradas = Entrada::all();
+
+        return view('entradas.index', compact('entradas'));
     }
 
     /**
