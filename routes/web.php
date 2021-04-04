@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ComentarioController;
+use App\Http\Controllers\EntradaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/', [EntradaController::class, 'index']);
 
 Route::resource('entradas', EntradaController::class);
 Route::resource('comentarios', ComentarioController::class);

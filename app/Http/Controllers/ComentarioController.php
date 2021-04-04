@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comentario;
+use App\Models\Entrada;
 use Illuminate\Http\Request;
 
 class ComentarioController extends Controller
@@ -10,21 +11,23 @@ class ComentarioController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        $comentarios = Comentario::all();
+
+        return view('comentarios.index', compact('comentarios'));
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function create()
     {
-        //
+        return view('comentarios.create');
     }
 
     /**
@@ -35,7 +38,17 @@ class ComentarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,['email' => 'required',]);
+
+        Comentario::create([
+            'email'=> request('email'),
+            'texto'=> request('texto'),
+            'fecha'=> request('fecha'),
+            'publicado'=> $request->has('publicado'),
+
+        ]);
+
+        return redirect(route('comentarios.index'));
     }
 
     /**
@@ -46,7 +59,7 @@ class ComentarioController extends Controller
      */
     public function show(Comentario $comentario)
     {
-        //
+        return view('comentarios.show', compact('comentario'));
     }
 
     /**
@@ -57,7 +70,7 @@ class ComentarioController extends Controller
      */
     public function edit(Comentario $comentario)
     {
-        //
+        return view('comentarios.edit', compact('comentario'));
     }
 
     /**
@@ -69,7 +82,17 @@ class ComentarioController extends Controller
      */
     public function update(Request $request, Comentario $comentario)
     {
-        //
+        $this->validate($request,['email' => 'required',]);
+
+        $comentario->update([
+            'email'=> request('email'),
+            'texto'=> request('texto'),
+            'fecha'=> request('fecha'),
+            'publicado'=> $request->has('publicado'),
+
+        ]);
+
+        return redirect(route('comentarios.index'));
     }
 
     /**
@@ -80,6 +103,7 @@ class ComentarioController extends Controller
      */
     public function destroy(Comentario $comentario)
     {
-        //
+        $comentario->delete();
+        return back();
     }
 }

@@ -20,8 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c1b757b-6d2f-411f-b986-6d804dc3d354" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Models/Entrada.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Entrada.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_04_143629_add_entrada_id_to_comentarios_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_04_143629_add_entrada_id_to_comentarios_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/comentarios/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/comentarios/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/comentarios/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/comentarios/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/entradas/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/entradas/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/entradas/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ComentarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ComentarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EntradaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EntradaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/entradas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/entradas/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,8 +164,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/comentarios" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dockerbox\www\blog2\resources\views\comentarios" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -173,7 +188,7 @@
       <updated>1617544362211</updated>
       <workItem from="1617544363330" duration="33000" />
       <workItem from="1617545043786" duration="10000" />
-      <workItem from="1617545711034" duration="1416000" />
+      <workItem from="1617545711034" duration="3257000" />
     </task>
     <servers />
   </component>
@@ -193,6 +208,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617548434102">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1617548434102" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1617545051393">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -201,9 +220,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="480" y="87" key="NewPhpClassDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1617546060453" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1617546072574">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1617547512775">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1617546072574" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1617547512775" />
+    <state x="1373" y="7" width="988" height="715" maximized="true" key="dock-window-1" timestamp="1617548995635">
+      <screen x="1366" y="0" width="1440" height="860" />
+    </state>
+    <state x="1373" y="7" width="988" height="715" maximized="true" key="dock-window-1/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1617548995635" />
   </component>
 </project>
