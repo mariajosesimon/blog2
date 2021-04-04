@@ -13,6 +13,8 @@ class ComentarioSeeder extends Seeder
      */
     public function run()
     {
-        Comentario::factory(10)->create();
+        Comentario::factory(10)->create([
+            'entrada_id' => 1
+        ]);
     }
 }

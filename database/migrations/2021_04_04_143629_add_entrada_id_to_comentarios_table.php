@@ -14,7 +14,14 @@ class AddEntradaIdToComentariosTable extends Migration
     public function up()
     {
         Schema::table('comentarios', function (Blueprint $table) {
-            //
+
+            // Sintaxis abreviada, utilizando las convenciones del ORM
+            $table->foreignId('entrada_id')->constrained()->onDelete('cascade');
+
+            // Sintaxis completa, personalizable
+            //$table->unsignedBigInteger('entrada_id');
+            //$table->foreign('entrada_id')->references('id')->on('entradas')->onDelete('cascade');
+
         });
     }
 
