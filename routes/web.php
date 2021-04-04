@@ -13,4 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [EntradaController::class, 'index']);
+Route::resource('entradas', EntradaController::class);
+Route::resource('comentarios', ComentarioController::class);
