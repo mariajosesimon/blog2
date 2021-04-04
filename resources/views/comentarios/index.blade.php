@@ -2,26 +2,26 @@
 
 @section('content')
 
-    <h1>Entradas</h1>
+    <h1>comentarios</h1>
 
     <table border="1">
         <thead>
         <tr>
-            <th>Título</th>
+            <th>Email</th>
             <th>Fecha</th>
-            <th>Visible</th>
+            <th>Publicado</th>
             <th colspan="2">Acciones</th>
         </tr>
         </thead>
         <tbody>
-        @foreach($entradas as $entrada)
+        @foreach($comentarios as $comentario)
             <tr>
-                <td><a href="{{ route('entradas.show', $entrada->id) }}">{{ $entrada->titulo }}</a></td>
-                <td>{{ $entrada->fecha }}</td>
-                <td>{{ $entrada->visible ? 'Sí' : 'No' }}</td>
-                <td><a href="{{ route('entradas.edit', $entrada->id) }}">Editar</a></td>
+                <td><a href="{{ route('comentarios.show', $comentario->id) }}">{{ $comentario->email }}</a></td>
+                <td>{{ $comentario->fecha }}</td>
+                <td>{{ $comentario->publicado ? 'Sí' : 'No' }}</td>
+                <td><a href="{{ route('comentarios.edit', $comentario->id) }}">Editar</a></td>
                 <td>
-                    <form action="{{ route('entradas.destroy', $entrada->id) }}" method="POST"
+                    <form action="{{ route('comentarios.destroy', $comentario->id) }}" method="POST"
                           onsubmit="return confirm('¿Estás seguro?');">
                         @csrf
                         @method('DELETE')
@@ -34,7 +34,7 @@
     </table>
 
     <p>
-        <a href="{{ route('entradas.create') }}">Nueva entrada</a>
+        <a href="{{ route('comentarios.create') }}">Nuevo comentario</a>
     </p>
 
 @endsection

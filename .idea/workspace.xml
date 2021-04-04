@@ -20,18 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c1b757b-6d2f-411f-b986-6d804dc3d354" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/comentarios/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/comentarios/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/comentarios/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/comentarios/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/entradas/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/entradas/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/entradas/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ComentarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ComentarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EntradaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EntradaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/entradas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/entradas/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/comentarios/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/comentarios/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/comentarios/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/comentarios/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/comentarios/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/comentarios/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/comentarios/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/comentarios/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +180,7 @@
       <updated>1617544362211</updated>
       <workItem from="1617544363330" duration="33000" />
       <workItem from="1617545043786" duration="10000" />
-      <workItem from="1617545711034" duration="3257000" />
+      <workItem from="1617545711034" duration="3611000" />
     </task>
     <servers />
   </component>
@@ -228,5 +220,13 @@
       <screen x="1366" y="0" width="1440" height="860" />
     </state>
     <state x="1373" y="7" width="988" height="715" maximized="true" key="dock-window-1/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1617548995635" />
+    <state x="1485" y="0" width="988" height="715" maximized="true" key="dock-window-2" timestamp="1617549352215">
+      <screen x="1366" y="0" width="1440" height="860" />
+    </state>
+    <state x="1485" y="0" width="988" height="715" maximized="true" key="dock-window-2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1617549352215" />
+    <state x="1541" y="0" width="988" height="715" key="dock-window-3" timestamp="1617549352215">
+      <screen x="1366" y="0" width="1440" height="860" />
+    </state>
+    <state x="1541" y="0" width="988" height="715" key="dock-window-3/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1617549352215" />
   </component>
 </project>

@@ -8,9 +8,9 @@
     <form action="{{ route('comentarios.store') }}" method="POST">
         @csrf
         <div>
-            <label>Título: </label>
-            <input type="text" name="titulo"/>
-            <span>{{ $errors->first('titulo') }}</span>
+            <label>Email: </label>
+            <input type="email" name="email"/>
+            <span>{{ $errors->first('email') }}</span>
         </div>
         <div>
             <label>Texto: </label>
@@ -21,8 +21,8 @@
             <input type="datetime-local" name="fecha" value="{{ now() }}"/>
         </div>
         <div>
-            <label>Visible: </label>
-            <input type="checkbox" name="visible" checked/>
+            <label>Publicado: </label>
+            <input type="checkbox" name="publicado" checked/>
         </div>
         <input type="submit" name="guardar" value="Guardar"/>
     </form>

@@ -2,33 +2,33 @@
 
 @section('content')
 
-    <h1>Editar entrada</h1>
+    <h1>Editar Comentario</h1>
 
-    <form action="{{ route('entradas.update', $entrada->id) }}" method="POST">
+    <form action="{{ route('comentarios.update', $comentario->id) }}" method="POST">
         @csrf
         @method('PUT')
         <div>
             <label>Título: </label>
-            <input type="text" name="titulo" value="{{ $entrada->titulo }}"/>
-            <span>{{ $errors->first('titulo') }}</span>
+            <input type="email" name="email" value="{{ $comentario->titulo }}"/>
+            <span>{{ $errors->first('email') }}</span>
         </div>
         <div>
             <label>Texto: </label>
-            <textarea name="texto">{{ $entrada->texto }}</textarea>
+            <textarea name="texto">{{ $comentario->texto }}</textarea>
         </div>
         <div>
             <label>Fecha: </label>
-            <input type="datetime-local" name="fecha" value="{{ $entrada->fecha ?: now() }}"/>
+            <input type="datetime-local" name="fecha" value="{{ $comentario->fecha ?: now() }}"/>
         </div>
         <div>
-            <label>Visible: </label>
-            <input type="checkbox" name="visible" {{ $entrada->visible ? 'checked' : '' }} />
+            <label>Publicado: </label>
+            <input type="checkbox" name="publicado" {{ $comentario->publicado ? 'checked' : '' }} />
         </div>
         <input type="submit" name="guardar" value="Guardar"/>
     </form>
 
     <p>
-        <a href="{{ route('entradas.index') }}">Cancelar</a>
+        <a href="{{ route('comentarios.index') }}">Cancelar</a>
     </p>
 
 @endsection
