@@ -23,6 +23,10 @@
             </tbody>
         </table>
 
+        @foreach ($entrada->comentarios as $comentario)
+            {{  $comentario->texto}}
+        @endforeach
+
         <div class="pt-4">
             <a class="btn-secondary" href="{{ route('entradas.index') }}">Volver</a>
         </div>
